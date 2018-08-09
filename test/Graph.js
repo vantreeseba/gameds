@@ -82,6 +82,10 @@ const test = {
         const cb = node => arr.push(node);
         graph.bfs('B', cb);
         assert.deepEqual(arr, ['B', 'A', 'B1', 'B2', 'A1']);
+      },
+      'should not fail if no cb is given': () => {
+        graph.addVertex('A');
+        graph.bfs('A');
       }
     },
     dfs: {
@@ -120,6 +124,26 @@ const test = {
         const cb = node => arr.push(node);
         graph.dfs('B', cb);
         assert.deepEqual(arr, ['B', 'A', 'A1', 'B1', 'B2']);
+      },
+      'should not fail if no cb is given': () => {
+        graph.addVertex('A');
+        graph.dfs('A');
+      }
+    },
+    print: {
+      'should print a graph': () => {
+        graph.addVertex('A');
+        graph.addVertex('A1');
+        graph.addVertex('B');
+        graph.addVertex('B1');
+        graph.addVertex('B2');
+
+        graph.addEdge('A', 'A1');
+        graph.addEdge('A', 'B');
+        graph.addEdge('B', 'B1');
+        graph.addEdge('B', 'B2');
+
+        graph.print();
       }
     }
   }
