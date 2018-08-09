@@ -83,7 +83,44 @@ const test = {
         graph.bfs('B', cb);
         assert.deepEqual(arr, ['B', 'A', 'B1', 'B2', 'A1']);
       }
+    },
+    dfs: {
+      'should do a dfs' : () => {
+        graph.addVertex('A');
+        graph.addVertex('A1');
+        graph.addVertex('B');
+        graph.addVertex('B1');
+        graph.addVertex('B2');
 
+        graph.addEdge('A', 'A1');
+        graph.addEdge('A', 'B');
+        graph.addEdge('B', 'B1');
+        graph.addEdge('B', 'B2');
+
+        const arr = [];
+
+        const cb = node => arr.push(node);
+        graph.dfs('A', cb);
+        assert.deepEqual(arr, ['A', 'A1', 'B', 'B1', 'B2']);
+      },
+      'should do a dfs starting at a diff node' : () => {
+        graph.addVertex('A');
+        graph.addVertex('A1');
+        graph.addVertex('B');
+        graph.addVertex('B1');
+        graph.addVertex('B2');
+
+        graph.addEdge('A', 'A1');
+        graph.addEdge('A', 'B');
+        graph.addEdge('B', 'B1');
+        graph.addEdge('B', 'B2');
+
+        const arr = [];
+
+        const cb = node => arr.push(node);
+        graph.dfs('B', cb);
+        assert.deepEqual(arr, ['B', 'A', 'A1', 'B1', 'B2']);
+      }
     }
   }
 };

@@ -68,6 +68,30 @@ class Graph {
   }
 
   /**
+   * A depth first search through the graph.
+   *
+   * @param {*} startingNode The node to start at.
+   * @param {Function} cb A callback for each node in the search.
+   */
+  dfs(startingNode, cb) {
+    var visited = new Set();
+
+    const search = (node) => {
+      visited.add(node);
+
+      if(typeof cb === 'function'){
+        cb(node);
+      }
+
+      this.adjList.get(node)
+        .filter(neighbor => !visited.has(neighbor))
+        .forEach(search);
+    };
+
+    search(startingNode);
+  }
+
+  /**
    * For debugging, prints adjacency list.
    */
   print() {
