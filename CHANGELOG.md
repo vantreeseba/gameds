@@ -1,5 +1,12 @@
+## 0.7.0 (2018-08-10)
+
+* Add bsp ([2286075](https://github.com/vantreeseba/gameds/commit/2286075))
+
+
+
 ## 0.6.0 (2018-08-09)
 
+* 0.6.0 ([98319e3](https://github.com/vantreeseba/gameds/commit/98319e3))
 * Get tests to 100% ([a9d15be](https://github.com/vantreeseba/gameds/commit/a9d15be))
 * Refactor, add npmignore. ([ac1b64f](https://github.com/vantreeseba/gameds/commit/ac1b64f))
 
