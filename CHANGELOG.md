@@ -1,5 +1,12 @@
+## 0.8.0 (2018-08-10)
+
+* Refactor and move files to root. ([7d036a9](https://github.com/vantreeseba/gameds/commit/7d036a9))
+
+
+
 ## 0.7.0 (2018-08-10)
 
+* 0.7.0 ([3396ee2](https://github.com/vantreeseba/gameds/commit/3396ee2))
 * Add bsp ([2286075](https://github.com/vantreeseba/gameds/commit/2286075))
 
 
