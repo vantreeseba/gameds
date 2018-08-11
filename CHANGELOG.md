@@ -1,5 +1,12 @@
+## <small>0.9.1 (2018-08-11)</small>
+
+* Expose heap ([2e5e1e2](https://github.com/vantreeseba/gameds/commit/2e5e1e2))
+
+
+
 ## 0.9.0 (2018-08-11)
 
+* 0.9.0 ([fb18ae0](https://github.com/vantreeseba/gameds/commit/fb18ae0))
 * Add heap ([6cdfa86](https://github.com/vantreeseba/gameds/commit/6cdfa86))
 
 
