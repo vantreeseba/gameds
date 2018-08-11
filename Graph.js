@@ -44,11 +44,8 @@ class Graph {
    * @param {Function} cb A callback for each node in the search.
    */
   bfs(startingNode, cb) {
-    var visited = new Set();
-    visited.add(startingNode);
-
-    var q = [];
-    q.push(startingNode);
+    var q = [startingNode];
+    var visited = new Set(q);
 
     const addVisitedNeighbor = neighbor => {
       if (!visited.has(neighbor)) {
