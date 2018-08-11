@@ -1,5 +1,12 @@
+## <small>0.9.2 (2018-08-11)</small>
+
+* Fix docs ([3efa398](https://github.com/vantreeseba/gameds/commit/3efa398))
+
+
+
 ## <small>0.9.1 (2018-08-11)</small>
 
+* 0.9.1 ([2c1fb1b](https://github.com/vantreeseba/gameds/commit/2c1fb1b))
 * Expose heap ([2e5e1e2](https://github.com/vantreeseba/gameds/commit/2e5e1e2))
 
 

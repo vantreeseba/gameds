@@ -207,7 +207,7 @@ Undirected and using an adjacency list.
     * [new Graph()](#new_Graph_new)
     * [.addVertex(v)](#Graph+addVertex) ⇒ <code>\*</code>
     * [.addEdge(src, dest)](#Graph+addEdge)
-    * [.bfs(startingNode)](#Graph+bfs)
+    * [.bfs(startingNode, cb)](#Graph+bfs)
     * [.dfs(startingNode, cb)](#Graph+dfs)
     * [.print()](#Graph+print)
 
@@ -243,7 +243,7 @@ Add an edge between src and dest.
 
 <a name="Graph+bfs"></a>
 
-### graph.bfs(startingNode)
+### graph.bfs(startingNode, cb)
 A breath first search through the graph, starting at the given node.
 
 **Kind**: instance method of [<code>Graph</code>](#Graph)  
@@ -251,6 +251,7 @@ A breath first search through the graph, starting at the given node.
 | Param | Type | Description |
 | --- | --- | --- |
 | startingNode | <code>\*</code> | The node to start the search at. |
+| cb | <code>function</code> | A callback for each node in the search. |
 
 <a name="Graph+dfs"></a>
 
