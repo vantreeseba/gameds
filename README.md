@@ -14,6 +14,9 @@ It won&#39;t shrink, but will try to reuse empty elements if they have been remo
 <dd><p>A graph data structure.
 Undirected and using an adjacency list.</p>
 </dd>
+<dt><a href="#Heap">Heap</a></dt>
+<dd><p>A heap implemenation.</p>
+</dd>
 </dl>
 
 <a name="ArrayList"></a>
@@ -267,3 +270,43 @@ A depth first search through the graph.
 For debugging, prints adjacency list.
 
 **Kind**: instance method of [<code>Graph</code>](#Graph)  
+<a name="Heap"></a>
+
+## Heap
+A heap implemenation.
+
+**Kind**: global class  
+
+* [Heap](#Heap)
+    * [new Heap(compare)](#new_Heap_new)
+    * [.push(n)](#Heap+push)
+    * [.pop()](#Heap+pop) ⇒ <code>\*</code>
+
+<a name="new_Heap_new"></a>
+
+### new Heap(compare)
+constructor
+
+
+| Param | Type |
+| --- | --- |
+| compare | <code>function</code> | 
+
+<a name="Heap+push"></a>
+
+### heap.push(n)
+Push an element onto the heap.
+
+**Kind**: instance method of [<code>Heap</code>](#Heap)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| n | <code>\*</code> | The element to push onto the heap. |
+
+<a name="Heap+pop"></a>
+
+### heap.pop() ⇒ <code>\*</code>
+Remove and return the ximum element in the heap.
+
+**Kind**: instance method of [<code>Heap</code>](#Heap)  
+**Returns**: <code>\*</code> - The ximum element on the heap.  

@@ -1,5 +1,12 @@
+## 0.9.0 (2018-08-11)
+
+* Add heap ([6cdfa86](https://github.com/vantreeseba/gameds/commit/6cdfa86))
+
+
+
 ## 0.8.0 (2018-08-10)
 
+* 0.8.0 ([bee1cb2](https://github.com/vantreeseba/gameds/commit/bee1cb2))
 * Refactor and move files to root. ([7d036a9](https://github.com/vantreeseba/gameds/commit/7d036a9))
 
 
