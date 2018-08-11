@@ -1,5 +1,6 @@
 module.exports = {
   ArrayList: require('./ArrayList'),
   Graph: require('./Graph'),
-  BSP: require('./BSP')
+  BSP: require('./BSP'),
+  Heap: require('./Heap')
 }
