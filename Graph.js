@@ -41,6 +41,7 @@ class Graph {
    * A breath first search through the graph, starting at the given node.
    *
    * @param {*} startingNode The node to start the search at.
+   * @param {Function} cb A callback for each node in the search.
    */
   bfs(startingNode, cb) {
     var visited = new Set();

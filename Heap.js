@@ -8,7 +8,6 @@ class Heap {
    */
   constructor(compare) {
     this.compare = compare || ((a, b) => a < b);
-
     this.elements = [];
   }
 
