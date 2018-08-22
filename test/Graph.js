@@ -29,22 +29,52 @@ const test = {
       }
     },
     addEdge: {
-      'should add an connection between src and dest' : () => {
+      'should add a connection between src and dest' : () => {
         graph.addVertex('A');
         graph.addVertex('B');
 
         graph.addEdge('A', 'B');
 
-        assert.equal(graph.adjList.get('A')[0], 'B');
+        assert.equal(graph.getNeighbors('A'), 'B');
       },
-      'should add an connection between dest and src' : () => {
+      'should add a connection between dest and src' : () => {
         graph.addVertex('A');
         graph.addVertex('B');
 
         graph.addEdge('A', 'B');
 
-        assert.equal(graph.adjList.get('B')[0], 'A');
+        assert.equal(graph.getNeighbors('B'), 'A');
+      },
+      'should add a weighted connection between src and dest' : () => {
+        graph.addVertex('A');
+        graph.addVertex('B');
+
+        graph.addEdge('A', 'B', 5);
+        assert.deepEqual(graph.getWeightedNeighbors('A'), [['B', 5]]);
+      },
+      'should add a weighted connection between dest and src' : () => {
+        graph.addVertex('A');
+        graph.addVertex('B');
+
+        graph.addEdge('A', 'B', 5);
+        assert.deepEqual(graph.getWeightedNeighbors('B'), [['A', 5]]);
+      },
+      'should add a diff weighted connection between dest and src' : () => {
+        graph.addVertex('A');
+        graph.addVertex('B');
+
+        graph.addEdge('A', 'B', 5, 1);
+        assert.deepEqual(graph.getWeightedNeighbors('B'), [['A', 5]]);
+      },
+
+      'should add a diff weighted connection between dest and src' : () => {
+        graph.addVertex('A');
+        graph.addVertex('B');
+
+        graph.addEdge('A', 'B', 5, 1);
+        assert.deepEqual(graph.getWeightedNeighbors('B'), [['A', 1]]);
       }
+
     },
     bfs: {
       'should do a bfs' : () => {

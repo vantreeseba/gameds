@@ -19,7 +19,7 @@ class Graph {
    */
   addVertex(v) {
     if(!this.adjList.has(v)) {
-      this.adjList.set(v, []);
+      this.adjList.set(v, new Map());
     }
   }
 
@@ -29,13 +29,42 @@ class Graph {
    * @param {*} src The source node.
    * @param {*} dest The destination node.
    */
-  addEdge(src, dest) {
+  addEdge(src, dest, sdweight = 0, dsweight = sdweight) {
     this.addVertex(src);
     this.addVertex(dest);
 
-    this.adjList.get(src).push(dest);
-    this.adjList.get(dest).push(src);
+    this.adjList.get(src).set(dest, sdweight);
+    this.adjList.get(dest).set(src, dsweight);
   }
+
+  /**
+   * Get the neighbors of the given node.
+   *
+   * @param {*} v The node to get neighbors for.
+   * @return {Array} The array of neighbor nodes.
+   */
+  getNeighbors(v) {
+    if(this.adjList.has(v)) {
+      return Array.from(this.adjList.get(v).keys());
+    }
+
+    return [];
+  }
+
+  /**
+   * Get the neighbor and wieights of the given node.
+   *
+   * @param {*} v The node to get neighbors for.
+   * @return {Array} The array of neighbor nodes.
+   */
+  getWeightedNeighbors(v) {
+    if(this.adjList.has(v)) {
+      return Array.from(this.adjList.get(v).entries());
+    }
+
+    return [];
+  }
+
 
   /**
    * A breath first search through the graph, starting at the given node.
@@ -55,13 +84,13 @@ class Graph {
     };
 
     while (q.length) {
-      var current = q.shift();
+      var node = q.shift();
 
       if (typeof cb === 'function') {
-        cb(current);
+        cb(node);
       }
 
-      this.adjList.get(current).forEach(addVisitedNeighbor);
+      this.getNeighbors(node).forEach(addVisitedNeighbor);
     }
   }
 
@@ -81,7 +110,7 @@ class Graph {
         cb(node);
       }
 
-      this.adjList.get(node)
+      this.getNeighbors(node)
         .filter(neighbor => !visited.has(neighbor))
         .forEach(search);
     };
@@ -95,7 +124,7 @@ class Graph {
   print() {
     // iterate over the vertices
     this.adjList.forEach((val, key) => {
-      const connections = this.adjList.get(key).reduce((cons, cur) => cons += `${cur} `,
+      const connections = this.getNeighbors(key).reduce((cons, cur) => cons += `${cur} `,
         `${key} -> `);
 
       console.log(connections);
