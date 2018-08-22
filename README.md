@@ -207,6 +207,8 @@ Undirected and using an adjacency list.
     * [new Graph()](#new_Graph_new)
     * [.addVertex(v)](#Graph+addVertex) ⇒ <code>\*</code>
     * [.addEdge(src, dest)](#Graph+addEdge)
+    * [.getNeighbors(v)](#Graph+getNeighbors) ⇒ <code>Array</code>
+    * [.getWeightedNeighbors(v)](#Graph+getWeightedNeighbors) ⇒ <code>Array</code>
     * [.bfs(startingNode, cb)](#Graph+bfs)
     * [.dfs(startingNode, cb)](#Graph+dfs)
     * [.print()](#Graph+print)
@@ -240,6 +242,30 @@ Add an edge between src and dest.
 | --- | --- | --- |
 | src | <code>\*</code> | The source node. |
 | dest | <code>\*</code> | The destination node. |
+
+<a name="Graph+getNeighbors"></a>
+
+### graph.getNeighbors(v) ⇒ <code>Array</code>
+Get the neighbors of the given node.
+
+**Kind**: instance method of [<code>Graph</code>](#Graph)  
+**Returns**: <code>Array</code> - The array of neighbor nodes.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| v | <code>\*</code> | The node to get neighbors for. |
+
+<a name="Graph+getWeightedNeighbors"></a>
+
+### graph.getWeightedNeighbors(v) ⇒ <code>Array</code>
+Get the neighbor and wieights of the given node.
+
+**Kind**: instance method of [<code>Graph</code>](#Graph)  
+**Returns**: <code>Array</code> - The array of neighbor nodes.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| v | <code>\*</code> | The node to get neighbors for. |
 
 <a name="Graph+bfs"></a>
 

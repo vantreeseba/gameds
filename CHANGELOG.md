@@ -1,5 +1,13 @@
+## 0.10.0 (2018-08-22)
+
+* Add weighting to edges in graph ([91cecbb](https://github.com/vantreeseba/gameds/commit/91cecbb))
+* Cleanup ([a177cbc](https://github.com/vantreeseba/gameds/commit/a177cbc))
+
+
+
 ## <small>0.9.2 (2018-08-11)</small>
 
+* 0.9.2 ([11487a7](https://github.com/vantreeseba/gameds/commit/11487a7))
 * Fix docs ([3efa398](https://github.com/vantreeseba/gameds/commit/3efa398))
 
 
