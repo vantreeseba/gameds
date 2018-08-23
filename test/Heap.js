@@ -54,6 +54,14 @@ const test = {
       },
     },
     pop: {
+      'should empty the heap when only one element exists': () => {
+        heap.push(1);
+        const el = heap.pop();
+
+        assert.equal(el, 1);
+        assert.notEqual(heap.elements[0], 1);
+
+      },
       'should pop the element from the root': () => {
         heap.push(3);
         heap.push(1);

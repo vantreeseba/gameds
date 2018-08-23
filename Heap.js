@@ -33,6 +33,9 @@ class Heap {
    */
   pop() {
     const element = this.elements[0];
+    if(this.elements.length === 1) {
+      return this.elements.pop();
+    }
     this.elements[0] = this.elements.pop();
     const length = this.elements.length;
 
