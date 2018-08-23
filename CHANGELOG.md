@@ -1,5 +1,13 @@
+## 0.11.0 (2018-08-23)
+
+* Fix a case where pop did not remove the last element from the heap ([c9a549b](https://github.com/vantreeseba/gameds/commit/c9a549b))
+* Make heap pop all elements, instead of keeping last one ([3037a2a](https://github.com/vantreeseba/gameds/commit/3037a2a))
+
+
+
 ## 0.10.0 (2018-08-22)
 
+* 0.10.0 ([7518306](https://github.com/vantreeseba/gameds/commit/7518306))
 * Add weighting to edges in graph ([91cecbb](https://github.com/vantreeseba/gameds/commit/91cecbb))
 * Cleanup ([a177cbc](https://github.com/vantreeseba/gameds/commit/a177cbc))
 
