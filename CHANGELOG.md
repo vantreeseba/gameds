@@ -1,5 +1,12 @@
+## <small>0.11.1 (2018-12-23)</small>
+
+* Adding repo to package.json ([3b2b28f](https://github.com/vantreeseba/gameds/commit/3b2b28f))
+
+
+
 ## 0.11.0 (2018-08-23)
 
+* 0.11.0 ([81b588a](https://github.com/vantreeseba/gameds/commit/81b588a))
 * Fix a case where pop did not remove the last element from the heap ([c9a549b](https://github.com/vantreeseba/gameds/commit/c9a549b))
 * Make heap pop all elements, instead of keeping last one ([3037a2a](https://github.com/vantreeseba/gameds/commit/3037a2a))
 
