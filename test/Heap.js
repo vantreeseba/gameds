@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-var Heap = require('../Heap');
+var Heap = require('../src/Heap');
 
 let heap;
 

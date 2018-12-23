@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-var Graph = require('../Graph');
+var Graph = require('../src/Graph');
 
 let graph;
 

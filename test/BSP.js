@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-var BSP = require('../BSP');
+var BSP = require('../src/BSP');
 
 let bsp;
 

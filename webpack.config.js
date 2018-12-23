@@ -10,7 +10,7 @@ const config = {
   },
   entry: {
     index: [
-      './index.js',
+      './src',
     ],
   },
   output: {

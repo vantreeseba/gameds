@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-var ArrayList = require('../ArrayList');
+var ArrayList = require('../src/ArrayList');
 
 let list;
 
