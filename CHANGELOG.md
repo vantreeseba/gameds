@@ -1,5 +1,13 @@
+## <small>0.11.2 (2018-12-23)</small>
+
+* Add src to npm ignore ([b18f677](https://github.com/vantreeseba/gameds/commit/b18f677))
+* Move things into src ([ef8cc73](https://github.com/vantreeseba/gameds/commit/ef8cc73))
+
+
+
 ## <small>0.11.1 (2018-12-23)</small>
 
+* 0.11.1 ([e895dd7](https://github.com/vantreeseba/gameds/commit/e895dd7))
 * Adding repo to package.json ([3b2b28f](https://github.com/vantreeseba/gameds/commit/3b2b28f))
 
 
