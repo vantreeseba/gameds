@@ -1,5 +1,12 @@
+## <small>0.11.3 (2018-12-23)</small>
+
+* Fix issue with readme ([292b81c](https://github.com/vantreeseba/gameds/commit/292b81c))
+
+
+
 ## <small>0.11.2 (2018-12-23)</small>
 
+* 0.11.2 ([62eff04](https://github.com/vantreeseba/gameds/commit/62eff04))
 * Add src to npm ignore ([b18f677](https://github.com/vantreeseba/gameds/commit/b18f677))
 * Move things into src ([ef8cc73](https://github.com/vantreeseba/gameds/commit/ef8cc73))
 
