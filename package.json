@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "browser": "dist/index.js",
+  "repository": "vantreeseba/gameds",
   "devDependencies": {
     "chai": "^4.1.0",
     "husky": "^0.14.3",

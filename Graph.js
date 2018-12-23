@@ -65,7 +65,6 @@ class Graph {
     return [];
   }
 
-
   /**
    * A breath first search through the graph, starting at the given node.
    *
