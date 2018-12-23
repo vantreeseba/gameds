@@ -59,14 +59,20 @@ class BSP {
     if (tooSmall) {
       return;
     }
+    let splitHeight;
+    let wider = node.w >= node.h * this.ratio;
+    let taller = node.h >= node.w * this.ratio;
 
-    let splitHeight = Math.random() > 0.5;
-    if(node.w >= node.h * this.ratio) {
-      splitHeight = false;
-    } else if(node.h >= node.w * this.ratio) {
+    if(!wider && !taller || (wider && taller)) {
+      splitHeight = Math.random() > 0.5;
+    }
+
+    if(!wider && taller) {
       splitHeight = true;
-    } else {
-      return;
+    }
+
+    if(!taller && wider) {
+      splitHeight = false;
     }
 
     if (splitHeight) {
